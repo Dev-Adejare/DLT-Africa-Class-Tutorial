@@ -49,3 +49,49 @@ console.log(A);
 
 
 
+
+//Variable => Variable is defined as a container that stores value.
+ //It behaves as if it were the value it contains.
+
+ //We can declare variable in two ways;
+ // 1. declaration 
+ //2. assignment
+
+ let age = 25;
+ let price = 10.99;
+ let gpa = 2.1;
+
+ console.log(`You are ${age} years old`);
+ console.log(`The price is #${price}`);
+ console.log(`Your  gpa is ${gpa}`);
+
+ console.log(typeof gpa);
+ console.log(typeof price);
+ console.log(typeof age);
+
+
+ let firstNamez = "Kenny";
+ let favoiuriteFood = "Pizza";
+ let email = "sodiqkehinde64@gmail.com";
+
+ console.log(`Your name is ${firstNamez}`);
+ console.log(`You like ${favoiuriteFood}`);
+ console.log(`Your email is ${email}`);
+
+ console.log(typeof firstNamez);
+ console.log(typeof favoiuriteFood);
+ console.log(typeof email);
+
+ 
+ 
+
+
+
+
+
+
+      
+
+
+
+
