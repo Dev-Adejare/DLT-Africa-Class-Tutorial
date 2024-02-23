@@ -82,6 +82,28 @@ console.log(A);
  console.log(typeof favoiuriteFood);
  console.log(typeof email);
 
+
+ //BOOLEANS => These are either true or false
+
+ let online = false;
+ let forSale = true;
+ let isStudent = true;
+
+ console.log(`Kenny is online: ${online}`);
+ console.log(`Is this car for sale: ${forSale}`);
+ console.log(`Enrolled: ${isStudent}`);
+
+
+ let firstNamezz = "Kenny";
+ let agee = 25;
+ let  isStudentz = false;
+
+ document.getElementById("p1").textContent = `Your name is ${firstNamezz}`;
+ document.getElementById("p2").textContent = `You are ${age} years old`;
+ document.getElementById("p3").textContent = `Enrolled: ${isStudentz}`;
+ 
+
+
  
  
 
