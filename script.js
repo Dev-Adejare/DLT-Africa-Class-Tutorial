@@ -102,10 +102,21 @@ console.log(A);
  document.getElementById("p2").textContent = `You are ${age} years old`;
  document.getElementById("p3").textContent = `Enrolled: ${isStudentz}`;
  
+//Arithemetic Operators => operands (Values, variables, etc)
+//                         operators (+ - * /)
+//                          ex.  11 = x + 5;
 
+let students = 30;
+
+// students = students + 1;
+// students = students * 3;
+// students = students / 5;
+students = students ** 2;
+
+console.log(students);
 
  
- 
+  
 
 
 
