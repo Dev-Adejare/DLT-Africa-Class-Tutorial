@@ -121,11 +121,25 @@ console.log(students);
 //                    (strings, numbers, booleans)
 
 
-let ages = window.prompt("How old are you?");
-ages = Number(ages);
-ages+=1;
+// let ages = window.prompt("How old are you?");
+// ages = Number(ages);
+// ages+=1;
 
-console.log(ages);
+// console.log(ages, typeof ages);
+
+let x = "Pizza"
+let y = "Pizza"
+let z = "Pizza"
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
+
+
 
 
 
