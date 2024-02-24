@@ -116,7 +116,17 @@ students = students ** 2;
 console.log(students);
 
  
-  
+
+//type conversion = change datatype of a value to another
+//                    (strings, numbers, booleans)
+
+
+let ages = window.prompt("How old are you?");
+ages = Number(ages);
+ages+=1;
+
+console.log(ages);
+
 
 
 
