@@ -2,7 +2,7 @@
  
 //Global Variable
 
-let i;
+// let i;
 for (i= 0; i < 5; i++) {
     let p = 10;
     console.log(i+p);
@@ -147,19 +147,19 @@ console.log(z, typeof z);
 //CONDITIONS
 //1. The functions check if any of our numbers is a multiples of 3:
 
-function printNumbers(){
-    for(let i = 1; i <= 100; i++) {
-        if (i % 3=== 0) {
-            console.log("multiple of 3");
-        } else {
-            console.log(i);
-        }
-    }
-}
-printNumbers();
+// function printNumbers(){
+//     for(let i = 1; i <= 100; i++) {
+//         if (i % 3=== 0) {
+//             console.log("multiple of 3");
+//         } else {
+//             console.log(i);
+//         }
+//     }
+// }
+// printNumbers();
 
 
-// let i =;
+let i =;
 let result = []
 
 const printNums = () => {
@@ -181,6 +181,15 @@ const printNums = () => {
 }
 
 console.log(printNums());
+
+
+// Videos
+
+//COUNTER PROGRAM
+
+
+
+
 
 
 
