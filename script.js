@@ -98,9 +98,9 @@ console.log(A);
  let agee = 25;
  let  isStudentz = false;
 
- document.getElementById("p1").textContent = `Your name is ${firstNamezz}`;
- document.getElementById("p2").textContent = `You are ${age} years old`;
- document.getElementById("p3").textContent = `Enrolled: ${isStudentz}`;
+//  document.getElementById("p1").textContent = `Your name is ${firstNamezz}`;
+//  document.getElementById("p2").textContent = `You are ${age} years old`;
+//  document.getElementById("p3").textContent = `Enrolled: ${isStudentz}`;
  
 //Arithemetic Operators => operands (Values, variables, etc)
 //                         operators (+ - * /)
@@ -159,7 +159,7 @@ console.log(z, typeof z);
 // printNumbers();
 
 
-let i =;
+// let i =;
 let result = []
 
 const printNums = () => {
@@ -187,9 +187,27 @@ console.log(printNums());
 
 //COUNTER PROGRAM
 
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countLabel = document.getElementById("countLabel");
+let count = 0;
 
 
 
+increaseBtn.onclick = function(){
+   count++;
+   countLabel.textContent = count; 
+}
+
+decreaseBtn.onclick = function(){
+   count--;
+   countLabel.textContent = count; 
+}
+resetBtn.onclick = function(){
+   count = 0;
+   countLabel.textContent = count; 
+}
 
 
 
