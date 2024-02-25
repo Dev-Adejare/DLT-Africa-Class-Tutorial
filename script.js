@@ -141,8 +141,46 @@ console.log(z, typeof z);
 
 
 
+//SOLIU_HOME_WORK
+
+//Write a funcion that prints 1 to 100.
+//CONDITIONS
+//1. The functions check if any of our numbers is a multiples of 3:
+
+function printNumbers(){
+    for(let i = 1; i <= 100; i++) {
+        if (i % 3=== 0) {
+            console.log("multiple of 3");
+        } else {
+            console.log(i);
+        }
+    }
+}
+printNumbers();
 
 
+// let i =;
+let result = []
+
+const printNums = () => {
+    for (i =1; i<= 100; i++) {
+        if (i % 3 === 0 && i % 5 !== 0) {
+            result.push("FIZZ");
+        }
+        else if (i % 5 === 0) {
+            result.push("BUZZ");
+        }
+        else if (i % 3 === 0 && i % 5 === 0) {
+            result.push("FIZZBUZZ");
+        }
+        else {
+            result.push(i);
+        }
+    }
+    return result;
+}
+
+console.log(printNums());
 
 
 
