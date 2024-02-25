@@ -1,66 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#countLabel{
+  display: block;
+  text-align: center;
+  font-size: 10em;
+  font-family:Helvetica;
 }
 
-.heroSection {
-  background-color: aqua;
-  padding: 2rem 5rem;
-}
-.sect {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3rem;
+#btnContainer{
+  text-align: center;
+ 
 }
 
-.firstFlat {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: gray;
-  gap: 1rem;
-  width: 100%;
-  align-items: center;
-  padding: 20px 30px;
+.buttons {
+  padding:  10px 20px;
+  font-size: 1.5em;
+  color: white;
+  background-color: hsl(214, 100%, 74%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s;
 }
 
-.firBox2 {
-    background-color: cadetblue;
-    font-size: 50px;
-}
-
-.firBox3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: goldenrod;
-    gap: 2rem;
-}
-
-.box3-ken {
-    padding: 10px;
-}
-
-p{
-    font-size: 20px;
-    color: blue;
-}
-.secondFlat {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: blue;
-  gap: 3rem;
-  width: 100%;
-  height: 700px;
-}
-
-.thirdFlat {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: brown;
-    gap: 3rem;
-    width: 100%;
+.buttons:hover{
+  background-color: hsl(214, 100%, 56%);
 }
