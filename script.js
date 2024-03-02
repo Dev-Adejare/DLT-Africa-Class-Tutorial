@@ -212,10 +212,24 @@ resetBtn.onclick = function(){
 
 //SOLIU_SATURDAY_TUTORIAL
 
+const cohort = [1 ,2, 3, 4];
+cohort.push(5);
+console.log(cohort)
+
+cohort.shift(1);
+console.log(cohort);
+
+cohort.unshift(0, 1);
+console.log(cohort);
 
 
+//SPLICE
 
+const cohortz = [1 ,2, 3, 4, 5];
+// cohortz.splice(1,3);
+console.log(cohortz);
 
+console.log(cohortz.splice(1,3));
       
 
 
