@@ -232,7 +232,52 @@ console.log(cohortx);
 // console.log(cohortz.splice(1,3));
 console.log(cohortx[0]);
       
+const apprentices = ["Seun", "Soliu", "Akin"];
+const app = apprentices.forEach((apprentice)=>{
+    console.log(`${apprentice}, welcome to DLTAfrica`)
+})
 
+//MAP()
+
+const numberz = [1, 2, 3, 4]
+
+const numTimesTwo = numberz.map((num) => {
+    return num * numberz.indexOf(num);
+})
+console.log(numTimesTwo);
+
+//VALUE & REFERENCE
+//JavaScript has 5 data types that are copied by value: Boolean , null , undefined , String , and Number . We'll call these primitive types.
+//JavaScript has 3 data types that are copied by having their reference copied: Array , Function , and Object .
+
+//OBJECT, it's method and declaration
+
+//object literal
+
+//constructor function
+
+function Students ( age, name, height) {
+    this.age = age;
+    this.name = name;
+    this.height = height;
+    return this;
+}
+
+Students.prototype.isCool = function(){
+    console.log('it is cool');
+}
+
+const student1 = new Students(30, "Kenny", 23);
+console.log(student1);
+student1.isCool();
+
+const student2 = new Students(20, "Ade", 21);
+console.log(student2);
+student2.isCool();
+
+const student3 = new Students(10, "Wale", 13);
+console.log(student3);
+student3.isCool();
 
 
 
