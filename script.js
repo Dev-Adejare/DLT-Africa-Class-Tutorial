@@ -225,11 +225,12 @@ console.log(cohort);
 
 //SPLICE
 
-const cohortz = [1 ,2, 3, 4, 5];
-// cohortz.splice(1,3);
-console.log(cohortz);
+const cohortx = ["Kenny", "ola", "Akin"];
+cohortx.splice(0,3, "soliu");
+console.log(cohortx);
 
-console.log(cohortz.splice(1,3));
+// console.log(cohortz.splice(1,3));
+console.log(cohortx[0]);
       
 
 
