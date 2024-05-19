@@ -67,7 +67,7 @@ function App() {
         <br />
         Country: <input onChange={handleInputChange}  name='country' type="text" />
         <br />
-        <button type="submit"> Edit Player</button>
+        {/* <button type="submit"> Edit Player</button> */}
 
       </form>
 
