@@ -24,7 +24,14 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setNames((prev) => [...prev, user]);
-  };
+  }; 
+
+  const handleInputChange = (e) => {
+    // console.log(object)
+    const inputName = e.target.name
+    const inputValue = e.target.value
+    setPlayer({...player, [inputName]:inputValue})
+  }
 
   return (
     <>
@@ -51,6 +58,18 @@ function App() {
           <p> Index of {index}</p>
         </div>
       ))}
+
+
+      <form>
+        Name: <input  onChange={handleInputChange} name='name' type="text" />
+        <br />
+        Age: <input onChange={handleInputChange}  name='age' type="text" />
+        <br />
+        Country: <input onChange={handleInputChange}  name='country' type="text" />
+        <br />
+        <button type="submit"> Edit Player</button>
+
+      </form>
 
       <div>
         <h2>Player</h2>
