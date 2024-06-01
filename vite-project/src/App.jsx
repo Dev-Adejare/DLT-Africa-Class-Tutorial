@@ -2,20 +2,18 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [names, setNames] = useState(["Ade", "Yemi", "Aderayo"]);
+  const [names, setNames] = useState([]);
   const [player, setPlayer] = useState({ name: "", age: "", country: "" });
   const [user, setUser] = useState("");
 
-  // useEffect(() => {
-  //   console.log("useEffect is running");
-  // }, [count]);
+  // useEffect(() => {}, []);  useeffect syntax
 
   useEffect(() => {
     setTimeout(() => {
-      setCount((count) => count + 1);
-    }, 1000);
-    console.log("object")
-  });
+      setNames((prev) =>[...prev], "Ade", "Yemi", "Aderayo");
+    }, 1000); 
+    console.log("object");
+  }, []);
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -43,6 +41,8 @@ function App() {
     const inputValue = e.target.value;
     setPlayer((prev) => ({ ...prev, [inputName]: inputValue }));
   };
+
+  if (names.length === 0) return <h1>Loading...</h1>
 
   return (
     <>
