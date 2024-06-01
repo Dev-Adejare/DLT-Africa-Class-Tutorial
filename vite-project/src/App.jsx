@@ -7,8 +7,8 @@ function App() {
   const [user, setUser] = useState("");
   
   useEffect(() => {
-    
-  },[])
+    console.log("useEffect is running")
+  },[count])
 
 
   const handleIncrement = () => {
