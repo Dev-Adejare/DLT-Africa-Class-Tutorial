@@ -30,7 +30,7 @@ function App() {
     // console.log(object)
     const inputName = e.target.name
     const inputValue = e.target.value
-    setPlayer({...player, [inputName]:inputValue})
+    setPlayer(prev => ({...prev, [inputName]:inputValue}))
   }
 
   return (
