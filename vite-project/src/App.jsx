@@ -10,9 +10,9 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setNames((prev) =>[...prev], "Ade", "Yemi", "Aderayo");
-    }, 1000); 
-    console.log("object");
+      setNames((prev) => [...prev, "Ade", "Yemi", "Aderayo"]);
+    }, 2000);
+    console.log("running the useeffect");
   }, []);
 
   const handleIncrement = () => {
@@ -42,7 +42,9 @@ function App() {
     setPlayer((prev) => ({ ...prev, [inputName]: inputValue }));
   };
 
-  if (names.length === 0) return <h1>Loading...</h1>
+  if (names.length === 0) {
+    return <h1>Loading...</h1>;
+  }
 
   return (
     <>
@@ -63,7 +65,7 @@ function App() {
         <button type="reset">Reset Input</button>
       </form>
 
-      {names.map((name, index, arr) => (
+      {names.map((name, index) => (
         <div key={index}>
           <p>Name: {name}</p>
           <p> Index of {index}</p>
