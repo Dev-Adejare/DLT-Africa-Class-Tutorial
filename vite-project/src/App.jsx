@@ -5,11 +5,17 @@ function App() {
   const [names, setNames] = useState(["Ade", "Yemi", "Aderayo"]);
   const [player, setPlayer] = useState({ name: "", age: "", country: "" });
   const [user, setUser] = useState("");
-  
-  useEffect(() => {
-    console.log("useEffect is running")
-  },[count])
 
+  // useEffect(() => {
+  //   console.log("useEffect is running");
+  // }, [count]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+    console.log("object")
+  });
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -29,14 +35,14 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setNames((prev) => [...prev, user]);
-  }; 
+  };
 
   const handleInputChange = (e) => {
     // console.log(object)
-    const inputName = e.target.name
-    const inputValue = e.target.value
-    setPlayer(prev => ({...prev, [inputName]:inputValue}))
-  }
+    const inputName = e.target.name;
+    const inputValue = e.target.value;
+    setPlayer((prev) => ({ ...prev, [inputName]: inputValue }));
+  };
 
   return (
     <>
@@ -58,22 +64,21 @@ function App() {
       </form>
 
       {names.map((name, index, arr) => (
-        <div>
-          <p key={index}>Name: {name}</p>
+        <div key={index}>
+          <p>Name: {name}</p>
           <p> Index of {index}</p>
         </div>
       ))}
 
-
       <form>
-        Name: <input  onChange={handleInputChange} name='name' type="text" />
+        Name: <input onChange={handleInputChange} name="name" type="text" />
         <br />
-        Age: <input onChange={handleInputChange}  name='age' type="text" />
+        Age: <input onChange={handleInputChange} name="age" type="text" />
         <br />
-        Country: <input onChange={handleInputChange}  name='country' type="text" />
+        Country:{" "}
+        <input onChange={handleInputChange} name="country" type="text" />
         <br />
         {/* <button type="submit"> Edit Player</button> */}
-
       </form>
 
       <div>
