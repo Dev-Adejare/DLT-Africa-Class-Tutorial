@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
   const [names, setNames] = useState(["Ade", "Yemi", "Aderayo"]);
   const [player, setPlayer] = useState({ name: "", age: "", country: "" });
   const [user, setUser] = useState("");
+  
+  useEffect(() => {
+    
+  },[])
+
 
   const handleIncrement = () => {
     setCount(count + 1);
